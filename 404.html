@@ -1,121 +1,244 @@
-<!DOCTYPE html>
-<!-- saved from url=(0066)file:///C:/Users/paull/OneDrive/Desktop/Stuff/WonderTeach/404.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-  <title>Page not found - WonderTeach</title></head><body class="dark"><center><br>
-	<script>
-		if (document.cookie.indexOf("visited=true") == -1) {
-			document.cookie = "visited=true";
-			document.write("<h1>Welcome to WonderTeach</h1>");
-		} else {
-			document.write("<h1>Welcome back to WonderTeach</h1>");
-		}
-	</script><h1>Page not found</h1>
-<h2>We couldn't find the page you were looking for.<br><br>Try using this link to go back to the home page:</h2>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-    }
+<html><head></head><body><div class="error-pg">
 
-    :root {
-      --bg-color: #f8f8f8;
-      --text-color: #232323;
-    }
+  <div class="error-number">
+    <div class="number left-coffee">4</div>
+    <div class="coffee-mug"></div>
+    <div class="number right-coffee">4</div>
+  </div>
+  <div class="sm-screen">404</div>
+  <div class="mean-msg">
+   Oops! Looks like you are lost. This page doesn't exist, maybe you mistyped the URL? It's best to just <a href="./index.html">go back home.</a>
+  </div>
 
-    body.dark {
-      --bg-color: #232323;
-      --text-color: #f8f8f8;
-    }
+</div>
 
-    #container {
-      max-width: 800px;
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-      box-sizing: border-box;
-    }
+<style>@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400");
 
-    .grade-button {
-      background-color: #ff6f69;
-      color: #fff;
-      font-size: 24px;
-      font-weight: bold;
-      padding: 20px 30px;
-      border: none;
-      border-radius: 5px;
-      margin: 10px;
-      cursor: pointer;
-      transition: all 0.2s ease-in-out;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .grade-button:hover {
-      background-color: #ff1e00;
-      transform: translateY(-2px);
-      box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .grade-button:active {
-      transform: translateY(0);
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .theme-switch {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      font-size: 18px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.2s ease-in-out;
-    }
-
-    .theme-switch:hover {
-      transform: scale(1.1);
-    }
-  </style>
-
-
-  <center><style>
-a:link {
-  color: blue;
-  background-color: transparent;
-  text-decoration: underline;
+body {
+  background: #232323;
+  overflow: hidden;
+  cursor: default;C
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montesrrat", sans-serif;
 }
-a:visited {
-  color: blue;
-  background-color: transparent;
-  text-decoration: underline;
+
+a {
+  text-decoration: none !important;
 }
-a:hover {
-  color: #0069d9;
-  background-color: transparent;
-  text-decoration: underline;
+
+.sm-screen {
+  display: none;
 }
-a:active {
-  color: blue;
-  background-color: transparent;
-  text-decoration: underline;
+
+.error-number {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 700px;
 }
-</style>
 
+.number {
+  font-size: 25em;
+  color: #414042;
+}
 
+.number.left-coffee {
+  margin-right: 2%;
+  z-index: -1;
+}
 
+.number.right-coffee {
+  margin-left: 2%;
+  z-index: -1;
+}
 
+/* COFFEE MUG */
 
+.coffee-mug {
+  background: #3f2616;
+  position: relative;
+  margin: 0;
+  width: 170px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #442918, 0 0 0 25px #3c2415, 0 0 0 42px #e4e6b2,
+    0 0 0 65px #eff0d1, 0 120px 0 -25px #3c2415, 100px 70px 0 -25px #3c2415,
+    80px 140px 0 -10px #3c2415, 0px 210px 0 -55px #3c2415,
+    20px 250px 0 -65px #3c2415;
+}
 
+.coffee-mug::before {
+  content: "";
+  position: absolute;
+  background: #eff0d1;
+  height: 80px;
+  width: 60px;
+  top: -85px;
+  right: -75px;
+  border-radius: 5px;
+  box-shadow: inset 0px 50px 0 0px #eff0d1;
+  transform: rotate(45deg);
+}
 
-<a href="file:///C:/Users/paull/OneDrive/Desktop/WonderTeach/index.html" target="_blank">Home</a> <br><br><br><br><br><br><h2>Or maybe it's time for a coffee break? We won't judge.</h2>
-    
-    
-    
-    
-    
-    
+.coffee-mug::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  border: 3px solid #77665c;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  opacity: 0.2;
+  animation: rings 3s ease-out infinite;
+}
 
-  </center></center></body></html>
+@keyframes rings {
+  to {
+    width: 150px;
+    height: 150px;
+    opacity: 0;
+  }
+}
+
+/* Mean Message */
+.mean-msg {
+  font-size: 1.5em;
+  margin-top: 90px;
+  text-align: center;
+}
+
+.mean-msg a {
+  border-bottom: 1px solid #b2b2b2;
+  color: #b2b2b2;
+}
+
+@media only screen and (max-width: 650px) {
+  .coffee-mug {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #442918, 
+                0 0 0 25px #3c2415, 
+                0 0 0 42px #e4e6b2,
+                0 0 0 65px #eff0d1, 
+                10px 120px 0 -25px #3c2415, 
+                70px 90px 0 -25px #3c2415,
+                50px 120px 0 -10px #3c2415;
+  }
+
+  .number {
+    font-size: 22em;
+  }
+
+  @keyframes rings {
+    to {
+      width: 50px;
+      height: 50px;
+      opacity: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .coffee-mug {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #442918, 
+                0 0 0 25px #3c2415, 
+                0 0 0 42px #e4e6b2,
+                0 0 0 65px #eff0d1, 
+                10px 120px 0 -25px #3c2415, 
+                70px 90px 0 -25px #3c2415,
+                50px 120px 0 -10px #3c2415;
+  }
+
+  .number {
+    font-size: 17em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .coffee-mug {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #442918, 
+                0 0 0 25px #3c2415, 
+                0 0 0 42px #e4e6b2,
+                0 0 0 65px #eff0d1;
+    }
+
+  .number {
+    font-size: 12em;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .coffee-mug {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #442918, 
+                0 0 0 25px #3c2415, 
+                0 0 0 40px #e4e6b2,
+                0 0 0 55px #eff0d1;
+    }
+
+  .number {
+    font-size: 8em;
+  }
+
+  .coffee-mug::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    left: -3px;
+  }
+
+  .coffee-mug::before {
+    content: "";
+    position: absolute;
+    background: #eff0d1;
+    height: 40px;
+    width: 30px;
+    top: -70px;
+    right: -60px;
+    border-radius: 5px;
+    box-shadow: inset 0px 50px 0 0px #eff0d1;
+    transform: rotate(45deg);
+  }
+
+  @keyframes rings {
+    to {
+      width: 15x;
+      height: 15px;
+      opacity: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  .error-number {
+    display: none;
+  }
+
+  .sm-screen {
+    display: block;
+    text-align: center;
+    color: #414042;
+    font-size: 5em;
+  }
+}
+</style></body></html>

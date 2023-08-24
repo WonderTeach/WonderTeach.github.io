@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Print Button</title>
+</head>
+<body>
+    <button id="printButton">Print PDF</button>
+
+    <script>
+        document.getElementById("printButton").addEventListener("click", function() {
+            // Replace "path/to/your.pdf" with the actual path to your PDF file
+            var pdfUrl = "path/to/your.pdf";
+            
+            // Open the PDF in a new window
+            var pdfWindow = window.open(pdfUrl, "_blank");
+
+            // Wait for the PDF window to load, then open the print dialog
+            pdfWindow.onload = function() {
+                pdfWindow.print();
+                // Close the PDF window after the user responds to the print dialog
+                setTimeout(function() {
+                    pdfWindow.close();
+                }, 10); // Adjust the timeout value as needed
+            };
+        });
+    </script>
+</body>
+</html>

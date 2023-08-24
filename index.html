@@ -1,0 +1,118 @@
+<html><head><link rel="icon" type="image/x-icon" href="https://dl.dropboxusercontent.com/s/3qc7se36lt1ztdu/favicon.ico">
+<style>
+body {
+  transition: background-color 0.3s ease;
+}
+<script>
+    function toggleTheme() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
+</style></head><body class="dark"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <center></center>
+
+    <script>
+    function toggleTheme() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
+<title>Select a grade - WonderTeach</title><center><br><center><h2>  <a href="./userguide.html" target="_blank" rel="noopener noreferrer" style="color: blue;">• User Guide</a></h2></center>
+<h1>Welcome to WonderTeach</h1>
+<h2>Select a grade</h2><img src="./logo.png" alt="Worksheet Wise">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    :root {
+      --bg-color: #f8f8f8;
+      --text-color: #232323;
+    }
+
+    body.dark {
+      --bg-color: #232323;
+      --text-color: #f8f8f8;
+    }
+
+    #container {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .grade-button {
+      background-color: #ff6f69;
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      padding: 20px 30px;
+      border: none;
+      border-radius: 5px;
+      margin: 10px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .grade-button:hover {
+      background-color: #ff1e00;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .grade-button:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .theme-switch {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .theme-switch:hover {
+      transform: scale(1.1);
+    }
+  </style>
+
+
+  <center><br>
+    <button class="grade-button" onclick="window.open('./1', '_blank');">Grade 1</button><br>
+    <button class="grade-button" onclick="window.open('./2', '_blank');">Grade 2</button><br>
+    <button class="grade-button" onclick="window.open('./3', '_blank');">Grade 3</button><br>
+    <button class="grade-button" onclick="window.open('./4', '_blank');">Grade 4</button><br>
+    <button class="grade-button" onclick="window.open('./5', '_blank');">Grade 5</button><br>
+    <div class="theme-switch" onclick="toggleTheme()">Switch Theme</div>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("dark");
+    }
+  </script><script>function toggleTheme() {
+  const body = document.querySelector('body');
+  body.classList.toggle('dark-theme');
+
+  const themeSwitch = document.querySelector('.theme-switch');
+  if (body.classList.contains('dark-theme')) {
+    themeSwitch.textContent = 'Light';
+  } else {
+    themeSwitch.textContent = 'Dark';
+  }
+}
+
+</body>
+</html>
+</script></center></center></body></html>
